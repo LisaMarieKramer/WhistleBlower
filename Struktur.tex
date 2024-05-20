@@ -1,0 +1,389 @@
+\documentclass[12pt, a4paper]{article}
+
+%==================================================
+%wichtige Packages
+%==================================================
+
+\usepackage[T1]{fontenc}                %Richtige Darstellung Sonderzeichen
+\usepackage[utf8]{inputenc}             %Richtige Darstellung Umlaute
+\usepackage[ngerman]{babel}             %Sprache: Deutsch
+\usepackage{helvet}                     %Schriftart: Helvetica
+\usepackage{setspace}   %Zeilenabstand: 1,5
+\usepackage{import}                     %Import Datein
+\usepackage{subfiles}                   %Unterkapitel
+\usepackage{paralist}
+\usepackage[hyphens]{url}               %Zeilenumbruch in URL
+\usepackage[driver=pdftex]{geometry}    %Seitenränder
+\usepackage[hang]{footmisc}             %Fußnote Strich unten
+\usepackage{graphicx}                   %Für Bilder
+\usepackage{longtable}                  %Abkürzungsverzeichnis
+\usepackage{tocloft}                    %Anhangsverzeichnis
+\usepackage{titlesec}                   %Anhangsverzeichnis
+\usepackage{titletoc}                   %Anhangsverzeichnis
+\usepackage{etoolbox}                   %Anhangsverzeichnis
+\usepackage{csquotes}
+\usepackage[
+  style=authoryear, 
+  urldate=long, 
+  maxbibnames=99
+  ]{biblatex}                             %Literaturverzeichnis
+\usepackage[
+   disable
+  ]{todonotes}                            %Todos
+\usepackage[hidelinks]{hyperref}        %hidelinks versteckt den roten Kasten
+\usepackage{nameref}% loads gettitlestring
+\usepackage{array}
+\usepackage[labelfont={color=gray,small},textfont={color=gray,small}]{caption}
+\usepackage{lineno}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{pdfpages}
+\usepackage{pgffor}
+\usepackage{xparse}
+\usepackage{lmodern,textcomp}
+\usepackage{mathptmx}
+
+
+%==================================================
+%Literaturverzeichnis
+%==================================================
+
+\setstretch{1.15}
+
+\addbibresource{Quellen.bib}
+
+\DeclareDelimFormat{multinamedelim}{\addcomma\space}
+\DeclareDelimFormat{finalnamedelim}{\addcomma\space}
+\DeclareFieldFormat{title}{#1}
+% \DeclareFieldFormat{url}{#1}
+\DeclareFieldFormat{url}{\url{#1}}
+\urlstyle{rm}
+\DefineBibliographyStrings{german}{%
+  andothers = {et\addabbrvspace al\adddot},
+}
+\DeclareFieldFormat{extradate}{{\mknumalph{#1}}}
+\DeclareNameAlias{sortname}{family-given}
+
+\AtBeginBibliography{%
+  \renewcommand*{\multinamedelim}{\addspace\slash\addspace}%
+  \renewcommand*{\finalnamedelim}{\addspace\slash\addspace}%
+}
+
+% Fußnotenformat
+\renewbibmacro{cite}{\printtext[bibhyperref]{\printnames{labelname} (\iffieldundef{year}{o. J.}{\printfield{year}}\printfield{extradate})}}
+
+% Formatierung des Literaturverzeichnisses
+% Website
+% \DeclareBibliographyDriver{online}{%
+%   \textbf{\printnames{author} (\iffieldundef{year}{o. J.}{\printfield{year}}\printfield{extradate}):}\newline%
+%   \textnormal{\printfield{title}}, \printfield{url}, \printfield{note}.\bigbreak}
+
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\DeclareBibliographyDriver{online}{%
+\begin{tabular}{R{5cm}R{10cm}}
+    \textbf{\printnames{author}}  & \textnormal{\printfield{title}}, \printfield{url}, \printfield{note}. \\
+\end{tabular}\bigbreak
+}
+% \textbf{(\iffieldundef{year}{o. J.}{\printfield{year}}\printfield{extradate})}
+
+% Paper
+% \DeclareBibliographyDriver{booklet}{%
+%   \textbf{\printnames{author} (\iffieldundef{year}{o. J.}{\printfield{year}}\printfield{extradate}):}\newline%
+%   \textnormal{\printfield{title}}.\bigbreak}
+\DeclareBibliographyDriver{booklet}{%
+\begin{tabular}{R{5cm}R{10cm}}
+    \textbf{\printnames{author}}  & \textnormal{\printfield{title}}. \\
+\end{tabular}\bigbreak
+}
+
+% Buch
+% \DeclareBibliographyDriver{book}{%
+%   \textbf{\printnames{author} (\iffieldundef{year}{o. J.}{\printfield{year}}\printfield{extradate}):}\newline%
+%   \textnormal{\printfield{title}}, \iffieldundef{edition}{o. A.}{\printfield{edition}}, \printlist{publisher}\iflistundef{location}{}{, \printlist{location}}.\bigbreak}     
+\DeclareBibliographyDriver{book}{%
+\begin{tabular}{R{5cm}R{10cm}}
+    \textbf{\printnames{author}}  & \textnormal{\printfield{title}}, \iffieldundef{edition}{o. A.}{\printfield{edition}}, \printlist{publisher}\iflistundef{location}{}{, \printlist{location}}. \\
+\end{tabular}\bigbreak
+}
+%==================================================
+
+% \paragraph and \subparagraph for forth and fifth level headings
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{4}
+
+\titleformat{\paragraph}
+    {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+    {0pt}{1.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+\titleformat{\subparagraph}
+    {\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
+    {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+
+      \newcommand{\ipone}[3]{\footnote{
+        #1 \hyperref[#2]{Anhang \ref*{#2}, Z. #3}.
+      }}
+
+      \newcommand{\iptwo}[3]{\footnote{
+        #1 \hyperref[#2]{Anhang \ref*{#2}, Z. #3}.
+      }}
+
+      \newcommand{\iponetwo}[5]{\footnote{
+        #1 \hyperref[#2]{Anhang \ref*{#2}, Z. #3}; \hyperref[#4]{Anhang \ref*{#4}, Z. #5}.
+      }}
+
+      \NewDocumentCommand{\citeappendix}{O{} O{} m}{#1 \hyperref[#3]{Anhang \ref*{#3}, S. \pageref*{#3}}#2}
+
+      \NewDocumentCommand{\footappendix}{O{} O{} m}{\footnote{\citeappendix[#1][#2]{#3}.}}
+      
+      \NewDocumentCommand{\footappendencies}{O{} O{} m O{} m}{\footnote{
+          #1 \hyperref[#3]{Anhang \ref*{#3}, S. \pageref*{#3}}#2; \hyperref[#5]{Anhang \ref*{#5}, S. \pageref*{#5}}#4.
+        }}
+      
+       
+
+
+
+%==================================================
+%Einstellung Seitenränder
+%==================================================
+\geometry{
+        left=5.25cm,
+        right=2cm,
+        top=2cm,
+        bottom=2cm
+    }
+%==================================================
+
+%==================================================
+% Todos
+%==================================================
+\newcommand\todoin[2][]{\todo[inline, caption={2do}, #1]{
+ \begin{minipage}{\textwidth-4pt}#2\end{minipage}}}
+
+% Todos to left side
+\reversemarginpar
+
+% Todos Width
+\setlength{\marginparwidth}{3.5cm}
+
+% Todos Color
+\definecolor{NOTES}{HTML}{00ffff}
+\definecolor{REVIEW}{HTML}{d400ff}
+\definecolor{TODO}{HTML}{90EE90}
+%==================================================
+
+%Variable zum speichern der Seite
+\newcounter{savepage}
+
+\begin{document}
+
+    \newcounter{romanSection} % Inhaltsverzeichnis, etc, Mit Anhang
+    \newcounter{romanPage}    % Inhaltsverzeichnis, etc, ohne Anhang
+
+
+    %==================================================
+    %Deckblatt + Sperrvermerk
+    %==================================================
+
+    {\pagestyle{empty}
+
+    \input{Deckblatt.tex}
+
+    }
+    \newpage
+
+    {\pagestyle{empty}
+
+    \input{Eigenstaendigkeitserklaerung.tex}
+
+    }
+    \newpage
+
+
+    %==================================================
+    %Inhaltlsverzeichnis
+    %==================================================
+    
+    {   
+        %Kapitel und Seitennummerierung wird auf Römisch 1 gesetzt
+        \setcounter{page}{1}
+        \renewcommand{\thesection}{\Roman{section}}
+        \pagenumbering{Roman}
+
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    %Übershrift: Inhaltsverzeichnis
+    \section{Inhaltsverzeichnis}        
+
+    %Befehl, damit Inhaltsverzeichnis nicht doppelt da steht 
+    \renewcommand{\contentsname}{}
+
+    %Befehle zur Strukturierung des Inhaltsverzeichnisses (Anordnung)
+    \setlength\cftbeforesecskip{3pt}
+    \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+    %Inhaltsverzeichnis wird erzeugt
+    \tableofcontents 
+
+    \newpage
+
+
+    %==================================================
+    %Abkürzungsverzeichnis
+    %==================================================
+    
+    \input{Abkuerzungsverzeichnis.tex}    
+    \newpage
+
+
+    \input{Literaturverzeichnis.tex}
+    \newpage
+    
+
+    %==================================================
+    %Abbildungsverzeichnis
+    %==================================================
+
+    %Überschrift: Abbildungsverzeichnis
+    % \section{Abbildungsverzeichnis}
+
+    % %Befehl, damit Abbildungsverzeichnis nicht doppelt da steht 
+    % \renewcommand{\listfigurename}{}
+
+    % %Abbildungsverzeichnis wird erzeugt
+    % \listoffigures                      
+
+    % }
+
+    % KapitelNummerierung merken
+    % \setcounter{romanSection}{\thesection}
+    % \setcounter{romanPage}{\arabic{page}}
+
+
+    % \newpage
+
+    
+    %==================================================
+    %Inhaltliches
+    %==================================================
+
+    {
+        % KapitelNummerierung auf 0 setzen und mit arabischen Zahlen belegen
+        % \setcounter{section}{0}
+        \setcounter{page}{1}
+            \pagenumbering{arabic}
+
+    %Hier steht der Inalt
+    \newcounter{mainsection}
+    % \setcounter{mainsection}{0}
+    \renewcommand{\thesection}{\arabic{mainsection}}
+
+    \let\oldsection\section % Erstellen Sie eine Kopie des ursprünglichen \section Befehls
+
+    \renewcommand{\section}[1]{ % Überschreiben Sie den \section Befehl
+      \stepcounter{mainsection} % Inkrementieren Sie den Zähler
+      \oldsection{#1} % Rufen Sie den ursprünglichen \section Befehl auf
+    }
+
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
+
+    \input{01-Einleitung.tex}
+    
+    \input{02-Hauptteil/00-Index.tex}
+
+    \input{03-Fazit.tex}
+
+    %==================================================
+    %Quellen
+    %==================================================
+
+    % \defbibheading{bibnumbered}[Quellenverzeichnis]{
+    %     \section{#1}
+    % }
+    % % \setlength\emergencystretch{5em}
+    % \printbibliography[heading=bibnumbered]
+
+    % \newpage
+
+
+    %==================================================
+    %Anhangsverzeichnis 
+    %==================================================
+    % \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+    % %Seitennummerierung mit römischen Zahlen
+    % \pagenumbering{Roman}
+    % %letzte römische Seite wird gespeichert und hier weitergeführt
+    % \setcounter{page}{\numexpr\value{romanPage}+1}
+
+    % \appendix
+    % % Kapitelnummerierung fortsetzen IV, ...
+    % \setcounter{section}{\theromanSection}
+    % \renewcommand{\thesection}{\Roman{section}}
+
+    % \parindent0mm
+
+    % \section{Anhangsverzeichnis}
+
+    % \newcommand{\listappendicesname}{Anhangsverzeichnis}
+    % \renewcommand{\listappendicesname}{}
+    % \newlistof{appendices}{apc}{\listappendicesname}
+
+
+    % \newcommand{\appendices}[1]{\addcontentsline{apc}{appendices}{#1}}
+
+    % % \GetTitleStringSetup{expand}
+    % \newcounter{appendix}
+
+    % \titleformat{\subparagraph}
+    % {\normalfont\normalsize\bfseries}{Anhang \protect\the\numexpr\value{appendix}+1\relax{ - }}{0em}{}
+
+    % % \newcommand{\newappendix}[1]{
+    % %   \phantomsection
+    % %   % \stepcounter{appendix}
+    % %   \refstepcounter{appendix}
+    % %   \appendices{Anhang \arabic{appendix} - #1}
+    % %   \section*{Anhang \arabic{appendix} - #1}
+    % %   \label{#1}
+    % %   \subparagraph{#1}
+    % % }
+
+    % \newcommand{\newappendix}[2]{
+    %   \phantomsection
+    %   \subparagraph{#1}
+    %   \refstepcounter{appendix}
+    %   \label{#2}
+    %   \appendices{Anhang \arabic{appendix} - #1}
+    % }
+
+    % \newcommand{\newappendixpdf}[4]{
+    %   \newappendix{#1}{#4}
+    %   \foreach \n in {1,...,#3}{
+    %     \phantomsection
+    %     \label{#4:\n}
+    %     \includepdf[pages=\n,pagecommand=\thispagestyle{plain}]{#2}
+    %   }
+    % }
+
+    % \listofappendices
+
+    % \newpage
+
+
+
+    %==================================================
+    %Anhang
+    %==================================================
+    % \section{Anhang}
+    % \titleformat*{\section}{\fontsize{12}{14}\selectfont\bfseries} % Schriftgröße und Zeilenabstand ändern
+    % \setcounter{page}{1}
+    % \renewcommand{\thepage}{A\arabic{page}}
+
+    % \input{Anhang/00-Index.tex}
+    
+
+\end{document}

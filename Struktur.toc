@@ -1,0 +1,13 @@
+\babel@toc {ngerman}{}\relax 
+\setcounter {tocdepth}{0}
+\contentsline {section}{\numberline {I}Inhaltsverzeichnis}{I}{section.1}%
+\contentsline {section}{\numberline {II}Abkürzungsverzeichnis}{II}{section.2}%
+\contentsline {section}{\numberline {III}Literaturverzeichnis}{III}{section.3}%
+\setcounter {tocdepth}{4}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.4}%
+\contentsline {section}{\numberline {2}Hauptteil}{1}{section.5}%
+\contentsline {subsection}{\numberline {2.1}Teilkapitel}{1}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Unterteilkapitel}{1}{subsubsection.5.1.1}%
+\contentsline {paragraph}{\numberline {2.1.1.1}Unterunterteilkaptiel}{1}{paragraph.5.1.1.1}%
+\contentsline {section}{\numberline {3}Fazit}{1}{section.6}%
+\contentsfinish 
