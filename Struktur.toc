@@ -1,13 +1,24 @@
 \babel@toc {ngerman}{}\relax 
 \setcounter {tocdepth}{0}
 \contentsline {section}{\numberline {I}Inhaltsverzeichnis}{I}{section.1}%
-\contentsline {section}{\numberline {II}Abkürzungsverzeichnis}{II}{section.2}%
-\contentsline {section}{\numberline {III}Literaturverzeichnis}{III}{section.3}%
+\contentsline {section}{\numberline {II}Literaturverzeichnis}{II}{section.2}%
 \setcounter {tocdepth}{4}
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.4}%
-\contentsline {section}{\numberline {2}Hauptteil}{1}{section.5}%
-\contentsline {subsection}{\numberline {2.1}Teilkapitel}{1}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Unterteilkapitel}{1}{subsubsection.5.1.1}%
-\contentsline {paragraph}{\numberline {2.1.1.1}Unterunterteilkaptiel}{1}{paragraph.5.1.1.1}%
-\contentsline {section}{\numberline {3}Fazit}{1}{section.6}%
+\contentsline {section}{\numberline {A.}Einleitung}{1}{section.3}%
+\contentsline {subsection}{\numberline {I.}Einführung in das Thema und seine Bedeutung}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {II.}Gliederung und Zielsetzung der Arbeit}{1}{subsection.3.2}%
+\contentsline {section}{\numberline {B.}Whistleblowing}{2}{section.4}%
+\contentsline {subsection}{\numberline {I.}Die EU Whistleblower Richtline}{2}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {1.}Definition Whistleblowing}{2}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {2.}Aussagen der EU-Whistleblower Richtline}{2}{subsubsection.4.1.2}%
+\contentsline {paragraph}{\numberline {a)}Anwendungsbereich der Richtlinie}{2}{paragraph.4.1.2.1}%
+\contentsline {paragraph}{\numberline {b)}Voraussetzungen für den Schutz}{3}{paragraph.4.1.2.2}%
+\contentsline {paragraph}{\numberline {c)}Schutzmaßnahmen}{4}{paragraph.4.1.2.3}%
+\contentsline {paragraph}{\numberline {d)}Meldewege}{4}{paragraph.4.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.}Beeinflussung der Verabschiedung durch Entwicklungen in den USA}{5}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {II.}Mit dem Whistleblowing verbunden Herausforderungen}{7}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {1.}Arbeitrechtliche Herausforderungen}{7}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.}Datenrechtliche Herausforderungen}{8}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {3.}Strafrechtliche Herausforderungen}{10}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {III.}Eignung des Whistleblowings zur Verhinderung von Straftaten innerhalb eines Unternehmens}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {C.}Fazit}{14}{section.5}%
 \contentsfinish 

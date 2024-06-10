@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  21 MAY 2024 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  8 JUN 2024 08:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -894,37 +894,37 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/lmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-Package biblatex Info: Delimiter 'multinamedelim' in context '' already defined, overwriting on input line 55.
-Package biblatex Info: Delimiter 'finalnamedelim' in context '' already defined, overwriting on input line 56.
+Package biblatex Info: Delimiter 'multinamedelim' in context '' already defined, overwriting on input line 56.
+Package biblatex Info: Delimiter 'finalnamedelim' in context '' already defined, overwriting on input line 57.
 \c@savepage=\count458
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 183.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 185.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./Struktur.aux)
 \openout1 = `Struktur.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1000,9 +1000,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Struktur.bbl' found.
  (./Struktur.bbl)
-Package biblatex Info: Reference section=0 on input line 183.
-Package biblatex Info: Reference segment=0 on input line 183.
-Package hyperref Info: Link coloring OFF on input line 183.
+Package biblatex Info: Reference section=0 on input line 185.
+Package biblatex Info: Reference segment=0 on input line 185.
+Package hyperref Info: Link coloring OFF on input line 185.
  (./Struktur.out) (./Struktur.out)
 \@outlinefile=\write5
 \openout5 = `Struktur.out'.
@@ -1021,102 +1021,121 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \big@size=\dimen296
 \c@romanSection=\count465
 \c@romanPage=\count466
- (./Deckblatt.tex
-Overfull \hbox (59.56593pt too wide) in alignment at lines 36--40
- [] [] 
- []
-
-) [1
+ (./Deckblatt.tex) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./Eigenstaendigkeitserklaerung.tex) [2] (./Struktur.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 7.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 )
 \tf@toc=\write6
 \openout6 = `Struktur.toc'.
 
- [1] (./Abkuerzungsverzeichnis.tex
-Overfull \hbox (59.56592pt too wide) in alignment at lines 3--6
+ [1] (./Literaturverzeichnis.tex
+Overfull \hbox (12.35704pt too wide) in paragraph at lines 55--56
+\T1/ptm/m/n/12 ps://www.lexware.de/wissen/unternehmensfuehrung/  
+ []
+
+
+Overfull \hbox (16.8868pt too wide) in alignment at lines 3--78
  [] [] 
  []
 
-) [2] (./Literaturverzeichnis.tex)
-Overfull \hbox (59.56593pt too wide) in paragraph at lines 3--244
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--244
-
- []
-
-[3]
+[2] [3] [4]) [5]
 \c@mainsection=\count467
- (./01-Einleitung.tex) (./02-Hauptteil/00-Index.tex (./02-Hauptteil/01-Teilkapitel.tex
+ (./01-Einleitung.tex
+Overfull \hbox (7.13516pt too wide) in paragraph at lines 5--19
+\T1/ptm/m/n/12 Abhilfe hier-für und Schutz für die Hin-weis-ge-ber soll durch die Richt-li-nie 2019/1937
+ []
+
+) (./02-Hauptteil/00-Index.tex (./02-Hauptteil/01-Teilkapitel.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-)) (./03-Fazit.tex)
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.389 \end{document}
-                     [1] (./Struktur.aux)
+l.8 
+     [1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 
+      [2] [3] [4]) (./02-Hauptteil/02-Teilkapitel2.tex
+Overfull \hbox (3.29482pt too wide) in paragraph at lines 72--1
+\T1/ptm/m/n/12 wei-se be-schränk-ten ei-ge-nen Ad-mi-nis-tra-tivres-sour-cen, Ver-stö-ÿe ge-gen bun-des-recht-
+ []
+
+[5]
+Overfull \hbox (0.36617pt too wide) in paragraph at lines 2--3
+\T1/ptm/m/n/12 Die Er-las-sung der Whistleblowing-Richtlinie be-wirkt einen wich-ti-gen Bei-trag zum
+ []
+
+[6]
+Overfull \hbox (4.5195pt too wide) in paragraph at lines 5--20
+\T1/ptm/m/n/12 Ein wei-te-rer Punkt, der ar-beits-recht-lich zu Her-aus-for-de-run-gen füh-ren könn-te, könn-
+ []
+
+[7] [8] [9]) (./02-Hauptteil/03-Teilkapitel3.tex [10] [11] [12]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))) [13] (./03-Fazit.tex) [14] (./Struktur.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Struktur.out' has not changed.
-(rerunfilecheck)             Checksum: 953768EBEA6F7BEFC09CAC3F8CC0A6A0;1110.
+(rerunfilecheck)             Checksum: B973206CE7F3F522E7F9430D82DFC1BD;4477.
 Package logreq Info: Writing requests to 'Struktur.run.xml'.
 \openout1 = `Struktur.run.xml'.
 
  )
 (\end occurred inside a group at level 2)
 
-### simple group (level 2) entered at line 274 ({)
-### simple group (level 1) entered at line 212 ({)
+### simple group (level 2) entered at line 275 ({)
+### simple group (level 1) entered at line 214 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32713 strings out of 474116
- 619785 string characters out of 5743682
- 1931187 words of memory out of 5000000
- 54510 multiletter control sequences out of 15000+600000
- 602423 words of font info for 93 fonts, out of 8000000 for 9000
+ 32887 strings out of 474116
+ 622127 string characters out of 5743682
+ 1952187 words of memory out of 5000000
+ 54541 multiletter control sequences out of 15000+600000
+ 608433 words of font info for 98 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,8n,117p,731b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Struktur.pdf (6 pages, 36055 bytes).
+ 99i,8n,117p,776b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Struktur.pdf (21 pages, 103319 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

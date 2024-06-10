@@ -49,6 +49,7 @@
 %==================================================
 
 \setstretch{1.15}
+\setlength{\parindent}{0pt}
 
 \addbibresource{Quellen.bib}
 
@@ -105,6 +106,7 @@
     \textbf{\printnames{author}}  & \textnormal{\printfield{title}}, \iffieldundef{edition}{o. A.}{\printfield{edition}}, \printlist{publisher}\iflistundef{location}{}{, \printlist{location}}. \\
 \end{tabular}\bigbreak
 }
+
 %==================================================
 
 % \paragraph and \subparagraph for forth and fifth level headings
@@ -236,8 +238,7 @@
     %Abkürzungsverzeichnis
     %==================================================
     
-    \input{Abkuerzungsverzeichnis.tex}    
-    \newpage
+   
 
 
     \input{Literaturverzeichnis.tex}
@@ -280,7 +281,10 @@
     %Hier steht der Inalt
     \newcounter{mainsection}
     % \setcounter{mainsection}{0}
-    \renewcommand{\thesection}{\arabic{mainsection}}
+    \renewcommand{\thesection}{\Alph{mainsection}.}
+    \renewcommand{\thesubsection}{\Roman{subsection}.}
+    \renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+    \renewcommand{\theparagraph}{\alph{paragraph})}
 
     \let\oldsection\section % Erstellen Sie eine Kopie des ursprünglichen \section Befehls
 
